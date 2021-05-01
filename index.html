@@ -5,204 +5,274 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
 
-    <!-- =====BOX ICONS===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+   
 
     <title>Portfolio website complete</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
-    <!--===== HEADER =====-->
+
     <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="#" class="nav__logo">Rubidia</a>
-            </div>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">inicio</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">Sobre Mi</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Trabajos</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contactos</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Rubidia</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">inicio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Sobre Mi</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Trabajos</a>
+                      </li>
+    
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contactos</a>
+                      </li>
                 </ul>
+                
             </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
             </div>
         </nav>
     </header>
+    
+   
 
-    <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title">Hola,<br>Soy <span class="home__title-color">Rubidia</span><br>Futura Ingeniera</h1>
+    <div class="container">
+    <main>
+        <section class="row" id="home">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                <h1 class="display-2 ">Hola,<br>Soy <span class="home__title-color">Rubidia</span><br>Futura Ingeniera</h1>
+                <a href="#" class="btn btn-warning">Contacto</a>
 
-                <a href="#" class="button">Contacto</a>
+                <div class="d-flex justify-content-start my-2">
+                    <a href="" class="nav-item mx-2">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    
+                    <a href="" class="nav-item">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a> 
+                    <a href="" class="nav-item mx-2">
+                        <i class="fab fa-linkedin-in fa-2x"></i>
+                    </a>
+                </div>
             </div>
 
-            <div class="home__social">
-                <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-            </div>
-
-            <div class="home__img">
-                <img src="assets/img/perfil.png" alt="">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                <img class="img-fluid" src="assets/img/perfil.png" alt="">
             </div>
         </section>
 
-        <!--===== ABOUT =====-->
-        <section class="about section " id="about">
-            <h2 class="section-title">Sobre Mi</h2>
 
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/about.jpg" alt="">
+        
+        <section  id="about">
+            <h2 class="display-3 text-center">Sobre Mi</h2>
+
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <img class="img-fluid" src="assets/img/about.jpg" alt="">
                 </div>
 
-                <div>
-                    <h2 class="about__subtitle">Soy Rubidia</h2>
-                    <p class="about__text">Una chica con 20 años de edad, estudiante de la carrera Ingenieria en sistemas y redes Informáticas, curso cuarto año de estudio en la Universidad Gerardo Barrios, El Salvador, Usulutan.Mi objetivo es egresar con un conocimiento robusto
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <h2 class="display-4">Soy Rubidia</h2>
+                    <p class="text-center">Una chica con 20 años de edad, estudiante de la carrera Ingenieria en sistemas y redes Informáticas, curso cuarto año de estudio en la Universidad Gerardo Barrios, El Salvador, Usulutan.Mi objetivo es egresar con un conocimiento robusto
                         en todas las areas. En el futuro especializarme en Master del area ingenieria economica, Buscar un trabajo, formar parte de asociaciones que me ayuden a ir conociendo nuevas cosas, me gustaria poder interactuar con personas de
                         mi misma falcultad, que tengan u no experienciasprofesionales</p>
                 </div>
             </div>
         </section>
 
-        <!--===== SKILLS =====-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Habilidades</h2>
 
-            <div class="skills__container bd-grid">
-                <div>
-                    <h2 class="skills__subtitle"></h2>
-                    <p class="skills__text">Actualmente tengo poco concocimiento en el area de: Ign. economica, un poco de redes, poco conocimiento en lenguaje de programacion Html, en el transcurso de mi carrera espero desarrollar nuevas habilidades.
-                        <div class="skills__data">
-                            <div class="skills__names">
 
-                                <span class="skills__name">Ing.economica</span>
-                            </div>
-                            <div class="skills__bar skills__html">
+        <section class="" id="skills">
+            <h2 class="display-3 text-center">Habilidades</h2>
 
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
+            <div class="row">
+                <p class="text-center">Actualmente tengo poco concocimiento en el area de: Ign. economica, un poco de redes, poco conocimiento en lenguaje de programacion Html, en el transcurso de mi carrera espero desarrollar nuevas habilidades.
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6" >
+                
+                        <div class="progress  my-2">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">95% Ing.economica</div>
+                          </div>
 
-                                <span class="skills__name">Diseño y animacion</span>
-                            </div>
-                            <div class="skills__bar skills__css">
+                          <div class="progress my-2">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85% Diseño y animacion</div>
+                          </div>
 
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
 
-                                <span class="skills__name">Html</span>
-                            </div>
-                            <div class="skills__bar skills__js">
+                          <div class="progress my-2">
+                            <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65% Html</div>
+                          </div>
 
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
 
-                                <span class="skills__name">Sistemas de calidad</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
+                          <div class="progress my-2">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85% Sistemas de calidad</div>
+                          </div>
+                       
                 </div>
 
-                <div>
-                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <img class="img-fluid" src="assets/img/work3.jpeg" alt="" class="skills__img">
                 </div>
             </div>
         </section>
 
-        <!--===== WORK =====-->
-        <section class="work section" id="work">
-            <h2 class="section-title">Actividades</h2>
+        <section  id="work">
+            <h2 class="display-2 text-center">Actividades</h2>
 
-            <div class="work__container bd-grid">
-                <div class="work__img">
-                    <img src="assets/img/work1.png" alt="">
-                    <p class="work__text">"Logo de youtube" este logo fue creado en diseño y animacio, usando blender con el objetivo que aprender a utilizar figuras tridimensionales. </p>
-                </div>
+           
 
-                <div class="work__img">
-                    <img src="assets/img/work2.png" alt="">
-                    <p class="work__text">"Bocina" esta fue echa en la materia de electronica, se realizo con el objetivo de poner en practiva la teoria. </p>
-                </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 ">
 
-                <div class="work__img">
-                    <img src="assets/img/work3.jpeg" alt="">"Casa" Fue realizada en el area de modelaje y animacion por computadora, con el objetivo utilizar las figuras tridimensionales.
+                    <div class="card my-3">
+                        <img src="assets/img/work1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          
+                          <p class="card-text">
+                            "Logo de youtube" este logo fue creado en diseño y animacio, usando blender con el objetivo que aprender a utilizar figuras tridimensionales. 
+                          </p>
+                      
+                        </div>
+                      </div>
+                      
+
+                      <div class="card my-3">
+                        <img src="assets/img/work2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                         
+                          <p class="card-text">
+                            "Bocina" esta fue echa en la materia de electronica, se realizo con el objetivo de poner en practiva la teoria.
+                            </p>
+                       
+                        </div>
+                      </div>
+
+                      <div class="card my-3">
+                        <img src="assets/img/work3.png" class="card-img-top " alt="...">
+                        <div class="card-body">
+                          
+                          <p class="card-text">
+                              Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        
+                        </div>
+                      </div>
+    
                 </div>
-                <div class="work__img">
-                    <img src="assets/img/work4.PNG" alt="">""Calculadora" esta calculadora fue realizada en la materia de principios de programacion, su objetivo era que realizara operaciones digutales similares a la fisica.
-                </div>
-                <div class="work__img">
-                    <img src="assets/img/work5.png" alt="">
-                    <p class="work__text">"Fuente de alimentacion" fue realizada en la materia de electronica su objetivo era tener la misma funcion de una fisica,
-                </div>
-                <div class="work__img">
-                    <img src="assets/img/work6.PNG" alt="">
-                    <p class="work__text">"Convertidor de divisas" realizada en la materia de programacion su objetivo era convertir euros a dolares, libras a yenes y virseversa.
+               
+                <div class="col-12 col-sm-12 col-md-6 ">
+    
+                    <div class="card my-3">
+                        <img src="assets/img/work4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        
+                          <p class="card-text">
+                            "Casa" Fue realizada en el area de modelaje y animacion por computadora, con el objetivo utilizar las figuras tridimensionales.
+                        </p>
+                          
+                        </div>
+                      </div>
+                      
+
+                      <div class="card my-3">
+                        <img src="assets/img/work5.png" class="card-img-top my-3 img-fluid" alt="...">
+                        <div class="card-body">
+                          
+                          <p class="card-text">
+                            "Fuente de alimentacion" fue realizada en la materia de electronica su objetivo era tener la misma funcion de una fisica,
+                          </p>
+                         
+                        </div>
+                      </div>
+
+                      <div class="card my-3">
+                        <img src="assets/img/work6.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            "Convertidor de divisas" realizada en la materia de programacion su objetivo era convertir euros a dolares, libras a yenes y virseversa.
+                          </p>
+                         
+                        </div>
+                      </div>
+    
                 </div>
             </div>
+
+                    
         </section>
 
-        <!--===== CONTACT =====-->
+
         <section class="contact section" id="contact">
-            <h2 class="section-title">Contacto</h2>
 
-            <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Enviar" class="contact__button button">
-                </form>
+            <h2 class="display-3 text-center">Contacto</h2>
+
+            <div class="">
+               
+
+
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label"></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </form>
+                  
             </div>
         </section>
+
     </main>
 
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-        <p class="footer__title">Rubidia</p>
-        <div class="footer__social">
-            <a href="#" class="footer__icon"><i class='' ></i></a>
-            <a href="#" class="footer__icon"><i class='' ></i></a>
-            <a href="#" class="footer__icon"><i class='' ></i></a>
-        </div>
-        <p></p>
-    </footer>
+    </div>
+   
+
+
+    <!-- Footer -->
+<footer class="bg-light text-center text-lg-start mt-3">
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 
 
     <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
